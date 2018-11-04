@@ -1,0 +1,104 @@
+<!doctype html>
+<html>
+
+<head>
+    <script src="/scripts/charts/lib/moment.js"></script>
+    <script defer src="/scripts/charts/lib/Chart.bundle.min.js"></script>
+    <script defer src="/scripts/charts/lib/chartjs-plugin-streaming.min.js"></script>
+    <script defer type="module" src="/scripts/index.js"></script>
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <link rel="stylesheet" href="/css/background/background.css">
+    <link rel="stylesheet" href="/css/bikes.min.css">
+</head>
+
+<body>
+    <div class="background"></div>
+    <div class="line"></div>
+
+    <div class="container">
+        <div class="bike-container">
+            <div class="controls-container">
+                <div class="slower hidden"></div>
+                <div class="pause active"></div>
+                <div class="faster hidden"></div>
+            </div>
+            <div class="bike">
+                <div class="part frame">
+                    <div class="bar left-top"></div>
+                    <div class="bar left-bottom"></div>
+                    <div class="bar left"></div>
+                    <div class="bar top"></div>
+                    <div class="bar bottom"></div>
+                    <div class="bar right"></div>
+                </div>
+                <div class="part sadle">
+                    <div class="sit-here"></div>
+                    <div class="sadlepen"></div>
+                </div>
+                <div class="part handlebar">
+                    <div class="stem"></div>
+                    <div class="connector"></div>
+                    <div class="prehandle"></div>
+                    <div class="handle"></div>
+                </div>
+                <div class="part pedals">
+                    <div class="inside"></div>
+                    <div class="outside"></div>
+                    <div class="pedalstem front moves">
+                        <div class="pedalbase front moves"></div>
+                    </div>
+                    <div class="pedalstem back moves">
+                        <div class="pedalbase back moves"></div>
+                    </div>
+                </div>
+                <div class="part wheel left moves">
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                </div>
+                <div class="part wheel right moves">
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                    <div class="spoke"></div>
+                </div>
+                <div class="part axis left"></div>
+                <div class="part axis right"></div>
+            </div>
+
+        </div>
+        <div class="charts-container">
+            <h1>Service Monitor</h1>
+            <div class="item">
+                <div class="title">Service 1</div>
+                <div class="chart-container">
+                    <canvas id="service1"></canvas>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title">Service 2 and othe stuff</div>
+                <div class="chart-container">
+                    <canvas id="service2"></canvas>
+                </div>
+            </div>
+            <div class="item">
+                <div class="title">Service 3</div>
+                <div class="chart-container">
+                    <canvas id="service3"></canvas>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
