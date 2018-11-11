@@ -9,7 +9,7 @@
 	}
 }
 .background {
-	background: transparent url(/css/background/town.png) repeat-x;
+	background: transparent url(./town.png) repeat-x;
 	position: absolute;
 	top: 0; left: 0; right: 0; bottom: 0;
 	z-index: -1;
@@ -19,12 +19,12 @@
 		animation-duration: 1s;
 		animation-timing-function: ease-in;
 		animation-iteration-count: 1;
-		animation-fill-mode: forwards;
+		animation-fill-mode: both;
 		animation-direction: normal;
 		animation-name: movecity;
 		animation-duration: 1s;
 		animation-timing-function: linear;
-		animation-fill-mode: forwards;
+		animation-fill-mode: both;
 		animation-direction: normal;
 		animation-iteration-count: infinite;
 }
@@ -33,7 +33,7 @@
 		animation-duration:  225s;
 		animation-timing-function:  ease-out;
 		animation-iteration-count:  0.04;
-		animation-fill-mode: forwards;
+		animation-fill-mode: both;
 		animation-direction: normal;
 }
 
